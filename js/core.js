@@ -9,12 +9,3 @@ chk.addEventListener('change', () => {
 	}
 
 });
-//me
-//linkedin 
-//git
-//mail
-//tw 
-//insta
-//facebook
-//discord
-//
