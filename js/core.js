@@ -1,36 +1,20 @@
+const chk = document.getElementById('chk');
 
-changeLanguaje(0)
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+	var a = document.getElementsByClassName("zelda");
+	for (let index = 0; index < a.length; index++) 
+	{
+		a[index].classList.toggle("dark");
+	}
 
-
-function myFunction() 
-{
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
-function changeLanguaje(lang) 
-{
-    let es = document.getElementsByClassName('es');
-    let en = document.getElementsByClassName('en');
-    switch (lang) 
-    {
-        case 0:
-            for (let i = 0; i < en.length; i++) 
-            {
-                en[i].style.display = 'block';
-                es[i].style.display = 'none';
-            }
-            console.log('Hello!');
-            break;
-        case 1:
-            for (let i = 0; i < es.length; i++) 
-            {
-                en[i].style.display = 'none';
-                es[i].style.display = 'block';
-            }
-            console.log('Hola!');
-            break;
-        default:
-            break;
-    }
-
-}
+});
+//me
+//linkedin 
+//git
+//mail
+//tw 
+//insta
+//facebook
+//discord
+//

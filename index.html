@@ -3,32 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Adan Garcia - Software Developer</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="description" content="@adgarboc. I'm programmer newbie in minecraft and default in fornite [sic]. I love programming computers and exploring new technologies." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ad&aacute;n Garc&iacute;a - Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
 <body>
-
-    <div class="container">
-
-        <h2 class="en">Toggle Dark/Light Mode</h2>
-        <h2 class="es">Cambiar Modo Claro/Oscuro</h2>
-
-        <p class="en">Hello.</p>
-        <p class="es">Hola.</p>
-
-        <button class="en" onclick="myFunction()">Toggle mode</button>
-        <button class="es" onclick="myFunction()">Cambiar Modo</button>
-
-        <button class="es" onclick="changeLanguaje(0)">English</button>
-        <button class="en" onclick="changeLanguaje(1)">Español</button>
-
-        <script src="js/core.js"></script>
+    <div class="btnChanger">
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
     </div>
 
+    <div class="about">
+        <img class="me" src="https://s.gravatar.com/avatar/bb55c6f0b626a6060cd0068fe3ff85e9?s=512" alt="" />
+        <div class="social">
+            <ul>
+                <li>
+                    <a class="zelda" href="/about">
+                        <i class="fas fa-address-card" ></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="zelda" href="https://linkedin.com/in/adgarboc" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="zelda" href="https://github.com/adgarboc" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="zelda" href="mailto:adgarboc@gmx.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="zelda" href="https://twitter.com/adgarboc" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="zelda" href="https://instagram.com/adgarboc" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="zelda" href="https://bit.ly/3dMrZOI" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="floating-text">
+        Made with <i class="fa fa-heart"></i> by <a href="#">&commat;adgarboc</a>
+    </div>
+    <script src="js/core.js"></script>
 </body>
 
 </html>
