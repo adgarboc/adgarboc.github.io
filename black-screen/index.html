@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Black Screen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+        }
+        #changer
+        {
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="changer" type="button" class="btn btn-info">Fullscreen</button>
+    </div>
+
+    <script>
+        var fs = false;
+        var changer = document.getElementById("changer")
+        changer.addEventListener("click",fullscreenChange)
+        document.addEventListener("fullscreenchange", fullscreenChangeListener);
+        function fullscreenChange()
+        {
+            if (!fs) 
+            {
+                if (document.fullscreenEnabled) 
+                {
+                    document.documentElement.requestFullscreen();
+                }
+            }
+            else
+            {
+                document.exitFullscreen();
+            };
+        }
+        function fullscreenChangeListener()
+        {
+            if (!fs) 
+            {
+                fs = true;
+                changer.innerHTML = "Exit Fullscreen";
+                changer.classList.remove("btn-info");
+                changer.classList.add("btn-outline-secondary");
+            } else 
+            {
+                fs = false;
+                changer.innerHTML = "Fullscreen";
+                changer.classList.remove("btn-outline-secondary");
+                changer.classList.add("btn-info");
+            }
+        }
+    </script>
+</body>
+</html>
