@@ -3,7 +3,7 @@ const chk = document.getElementById('chk');
 chk.addEventListener('change', themer);
 
 date = new Date(); 
-hour = fecha.getHours();
+hour = date.getHours();
 if(hour >= 20 || hour <= 8)
 {
 	themer();
